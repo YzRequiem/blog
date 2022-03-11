@@ -1,0 +1,30 @@
+ {% extends "base.html.twig" %}
+ 
+ {% block body %}
+ <pre>
+     <h2> {{articles.titre}} </h2>
+     <p>catégorie : {{articles.categorie.nom}}</p>
+     <p>date de publication {{articles.datePublication|date("d/m/Y")}} </p>
+     
+     <p>{{articles.contenu}}</p>
+
+    {# form #}
+     <h2>redigez un commentaire </h2>
+    {% if app.user %}
+        {{form(commForm)}}
+    {% endif %}
+   
+
+    {# commentaires #}
+     <h2>commentaires : </h2>
+     <pre>
+        {% for commentaire in articles.commentaires %}
+            <p> {{commentaire.contenu}} </p>
+        {% endfor %}
+         
+     </pre>
+     
+
+ </pre>
+ {% endblock %}
+
