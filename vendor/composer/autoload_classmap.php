@@ -7,6 +7,11 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Controller\\AdminController' => $baseDir . '/src/Controller/AdminController.php',
+    'App\\Controller\\Admin\\ArticleCrudController' => $baseDir . '/src/Controller/Admin/ArticleCrudController.php',
+    'App\\Controller\\Admin\\CategorieCrudController' => $baseDir . '/src/Controller/Admin/CategorieCrudController.php',
+    'App\\Controller\\Admin\\CommentaireCrudController' => $baseDir . '/src/Controller/Admin/CommentaireCrudController.php',
+    'App\\Controller\\Admin\\DashboardController' => $baseDir . '/src/Controller/Admin/DashboardController.php',
+    'App\\Controller\\Admin\\UserCrudController' => $baseDir . '/src/Controller/Admin/UserCrudController.php',
     'App\\Controller\\ArticleController' => $baseDir . '/src/Controller/ArticleController.php',
     'App\\Controller\\CategorieController' => $baseDir . '/src/Controller/CategorieController.php',
     'App\\Controller\\MainController' => $baseDir . '/src/Controller/MainController.php',
